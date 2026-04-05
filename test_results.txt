@@ -1,0 +1,18 @@
+test_array_too_small (__main__.TestFindKLargest.test_array_too_small) ... ok
+test_find_k_largest (__main__.TestFindKLargest.test_find_k_largest) ... ERROR
+
+======================================================================
+ERROR: test_find_k_largest (__main__.TestFindKLargest.test_find_k_largest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\tourp\.vscode\lab.1\lab1.py", line 20, in test_find_k_largest
+    self.assertEqual(find_k_largest([5, 14, 8, 21, 18, 34], 10), (14, 1))
+                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\tourp\.vscode\lab.1\lab1.py", line 7, in find_k_largest
+    raise ValueError(f"Помилка: Розмір масиву ({len(mas)}) менший за k={k}")
+ValueError: Помилка: Розмір масиву (6) менший за k=10
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.069s
+
+FAILED (errors=1)
